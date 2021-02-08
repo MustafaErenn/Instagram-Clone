@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/bg_feed"
+    android:layout_height="match_parent"
+    tools:context=".UploadActivity">
+
+
+    <ImageView
+        android:id="@+id/uploadImage"
+        android:layout_width="324dp"
+        android:layout_height="215dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="92dp"
+        android:layout_marginEnd="16dp"
+        android:onClick="selectImage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.545"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/selectimage" />
+
+    <Button
+        android:id="@+id/uploadButton"
+        android:layout_width="213dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="148dp"
+        android:background="@drawable/button_field"
+        android:onClick="uploadImage"
+        android:text="UPLOAD"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/aciklamaText"
+        android:layout_width="316dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="28dp"
+        android:background="@null"
+
+        android:ems="10"
+        android:hint="Açıklama yaz.."
+
+        android:inputType="textMultiLine"
+        android:lines="8"
+        android:maxLines="10"
+
+        android:minLines="6"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/uploadButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/uploadImage"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

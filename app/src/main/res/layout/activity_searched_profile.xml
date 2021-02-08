@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_feed"
+    tools:context=".searchedProfileActivity">
+
+    <TextView
+        android:id="@+id/searchedProfileEmailText"
+        android:layout_width="185dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="40dp"
+        android:gravity="center_vertical"
+        android:hint="User"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.409"
+        app:layout_constraintStart_toEndOf="@+id/searchedProfilePhoto"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/searchedFollowButton"
+        android:layout_width="187dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#000000"
+        android:onClick="followButton"
+        android:text="Takip Et"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.421"
+        app:layout_constraintStart_toEndOf="@+id/searchedProfilePhoto"
+        app:layout_constraintTop_toBottomOf="@+id/searchedBiyografiText" />
+
+    <View
+        android:id="@+id/searchedDivider"
+        android:layout_width="0dp"
+        android:layout_height="7dp"
+        android:layout_marginTop="12dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchedFollowButton" />
+
+    <ImageView
+        android:id="@+id/searchedProfilePhoto"
+        android:layout_width="144dp"
+        android:layout_height="140dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/searchedDivider"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.512"
+        app:srcCompat="@drawable/defaultavatar" />
+
+    <TextView
+        android:id="@+id/searchedBiyografiText"
+        android:layout_width="185dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="12dp"
+        android:gravity="center_vertical"
+        android:hint="Bio"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.409"
+        app:layout_constraintStart_toEndOf="@+id/searchedProfilePhoto"
+        app:layout_constraintTop_toBottomOf="@+id/searchedProfileEmailText" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/searchedRecyclerView"
+        android:layout_width="400dp"
+        android:layout_height="427dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/searchedDivider" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

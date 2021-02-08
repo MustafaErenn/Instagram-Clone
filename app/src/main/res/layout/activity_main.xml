@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_login"
+    tools:context=".SignInActivity"
+    tools:layout_editor_absoluteX="-40dp"
+    tools:layout_editor_absoluteY="-2dp">
+
+
+    <TextView
+        android:id="@+id/registerText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="38dp"
+        android:text="Hesabın yok mu?"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/registerButton"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/registerButton"
+        android:layout_width="90dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginBottom="38dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:onClick="kaydolButton"
+        android:text="Kaydol"
+        android:textAlignment="center"
+        android:textColor="#39AEEF"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/registerText" />
+
+    <TextView
+        android:id="@+id/instagramCloneText"
+        android:layout_width="256dp"
+        android:layout_height="73dp"
+        android:layout_marginTop="58dp"
+        android:gravity="center|center_horizontal|center_vertical"
+        android:text="Instagram Clone"
+        android:textColor="#FFFFFF"
+        android:textSize="32sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/emailAdresiGiris"
+        android:layout_width="335dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="38dp"
+
+        android:layout_marginTop="73dp"
+        android:layout_marginEnd="38dp"
+        android:layout_marginBottom="77dp"
+        android:background="@drawable/input_field"
+        android:ems="10"
+        android:hint="Email Adresi"
+        android:inputType="textPersonName"
+        android:textColor="#2B5876"
+        android:textColorHint="#2B5876"
+        app:layout_constraintBottom_toBottomOf="@+id/sifreGiris"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/instagramCloneText" />
+
+    <EditText
+        android:id="@+id/sifreGiris"
+        android:layout_width="335dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="281dp"
+        android:layout_marginEnd="38dp"
+        android:background="@drawable/input_field"
+        android:ems="10"
+        android:hint="Şifre"
+        android:inputType="textPassword"
+        android:textColorHint="#2B5876"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="335dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="38dp"
+        android:background="@drawable/button_field"
+        android:onClick="girisYapClicked"
+        android:text="Giriş Yap"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sifreGiris" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+
+        <View
+            android:id="@+id/divider5"
+            android:layout_width="409dp"
+            android:layout_height="15dp"
+            android:background="@color/colorPrimaryDark"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/divider6"
+            android:layout_width="409dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="16dp"
+
+            android:background="@color/colorPrimaryDark"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/searchedProfileBio" />
+
+        <ImageView
+            android:id="@+id/searchedProfilePhoto"
+            android:layout_width="87dp"
+            android:layout_height="84dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.129"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/divider5"
+            app:srcCompat="@drawable/defaultavatar" />
+
+        <TextView
+            android:id="@+id/searchProfileEmail"
+            android:layout_width="256dp"
+            android:layout_height="36dp"
+            android:layout_marginTop="24dp"
+            android:gravity="center_vertical"
+            android:hint="Email"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/searchedProfilePhoto"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/searchedProfileBio"
+            android:layout_width="256dp"
+            android:layout_height="36dp"
+            android:layout_marginTop="12dp"
+            android:gravity="center_vertical"
+            android:hint="Bio"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/searchedProfilePhoto"
+            app:layout_constraintTop_toBottomOf="@+id/searchProfileEmail" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

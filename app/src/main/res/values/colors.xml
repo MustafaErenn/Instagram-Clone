@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#000d3d</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="colorUp">#7b4397  </color>
+    <color name="colorDown">#dc2430 </color>
+    <color name="light_gray">#ffedbc  </color>
+    <color name="buttonBG">#5b86e5 </color>
+    <color name="colorBlack">#000000 </color>
+    <color name="alive1">#67B26F</color>
+    <color name="alive2">#4ca2cd</color>
+    <color name="royal1">#141E30</color>
+    <color name="royal2">#243B55</color>
+
+</resources>
